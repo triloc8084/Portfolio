@@ -25,6 +25,7 @@ img {
 .hero,
 .main-content,
 .stack,
+.education-grid,
 .projects-grid,
 .certificate-grid,
 .form-container,
@@ -350,6 +351,70 @@ img {
 
 .projects {
   padding: 100px 20px;
+}
+
+.education {
+  padding: 100px 20px;
+  background: #0a0a0a;
+}
+
+.education-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education-intro h2 {
+  font-size: clamp(40px, 8vw, 62px);
+  margin-bottom: 20px;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.education-intro p {
+  font-size: clamp(16px, 3vw, 18px);
+  color: #cbd5f5;
+  line-height: 1.8;
+}
+
+.education-grid {
+  margin: 60px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-7px);
+  border-color: #3b82f6;
+}
+
+.education-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  color: #dbe5ff;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.education-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #9ec5ff;
+  font-size: 14px;
 }
 
 .project-intro {
@@ -774,6 +839,7 @@ img {
     text-align: center;
   }
   .intro h2,
+  .education-intro h2,
   .project-intro h2,
   .certificate-intro h2,
   .contact-intro h2 {
